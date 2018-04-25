@@ -1,0 +1,485 @@
+MODE            = 'test'
+GETHATTACHPOINT = 'ipc:./testchain/geth.ipc'
+PASSWORD        = ''
+SOURCEDIR       = '../contracts'
+TOKENSRC        = 'SencToken_0xA13f0743951B4f6E3e3AA039f682E17279f52bc3.sol'
+TOKENSOL        = 'SencToken.sol'
+TOKENJS         = 'SencToken.js'
+DEPLOYMENTDATA  = 'deploymentData.txt'
+INCLUDEJS       = './include.js'
+TEST1OUTPUT     = 'test1output.txt'
+TEST1RESULTS    = 'test1results.txt'
+solc, the solidity compiler commandline interface
+Version: 0.4.21+commit.dfe3193c.Darwin.appleclang
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.8.6-stable-12683fec/darwin-amd64/go1.10
+coinbase: 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e
+at block: 2082 (Thu, 26 Apr 2018 02:44:06 AEST)
+ datadir: /Users/bok/Projects/SentinelChainTokenContractAudit/test/testchain
+ modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 shh:1.0 txpool:1.0 web3:1.0
+
+> 
+true
+> 
+true
+> 
+> 
+undefined
+> 
+undefined
+> 
+> 
+undefined
+> 
+undefined
+> 
+> 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.000000000000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433        0.000000000000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Primary Operator
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Secondary Operator
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                     0.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Deploy Token Contract ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+...... 
+......... 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+......... 
+...... 
+... 
+undefined
+> 
+... 
+undefined
+> 
+DATA: var tokenAddress="0x022bfb654ced61e65f2869d87b5b3247514c606b";
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.004672581000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.004672581000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Primary Operator
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Secondary Operator
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                     0.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Deploy Token Contract
+1
+> 
+RESULT: tokenAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b status=0x1 Success gas=6000000 gasUsed=1557527 costETH=0.004672581 costUSD=3.94744315461 @ ETH/USD=844.81 gasPrice=3 gwei block=2089 txIx=0 txId=0xa3aceb7c549bc30f945a74a6383de7f5b75f0ee265770a10837038af9471b0bf @ 1524674653 Wed, 25 Apr 2018 16:44:13 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=0
+RESULT: token.mintingFinished=false
+RESULT: token.paused=true
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Mint Tokens ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.005041041000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.005041041000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Primary Operator
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Secondary Operator
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000         100.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000         200.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                   300.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Mint Tokens - mint 100 tokens for ac4
+1
+> 
+RESULT: PASS Mint Tokens - mint 200 tokens for ac5
+1
+> 
+RESULT: mintTokens_1Tx status=0x1 Success gas=400000 gasUsed=68910 costETH=0.00020673 costUSD=0.1746475713 @ ETH/USD=844.81 gasPrice=3 gwei block=2091 txIx=0 txId=0xf51170dc0326144232527d1c55ad30da87738b3251e430bc17e1742a4eddd5ec @ 1524674655 Wed, 25 Apr 2018 16:44:15 UTC
+undefined
+> 
+RESULT: mintTokens_2Tx status=0x1 Success gas=400000 gasUsed=53910 costETH=0.00016173 costUSD=0.1366311213 @ ETH/USD=844.81 gasPrice=3 gwei block=2092 txIx=0 txId=0x3c81a43de6bbb457bd97105e6bde7bf6b712d40ba4e3baf45c662ba247fe4981 @ 1524674656 Wed, 25 Apr 2018 16:44:16 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=300
+RESULT: token.mintingFinished=false
+RESULT: token.paused=true
+RESULT: Mint 0 #2091 {"amount":"100000000000000000000","to":"0xa44a08d3f6933c69212114bb66e2df1813651844"}
+RESULT: Mint 1 #2092 {"amount":"200000000000000000000","to":"0xa55a151eb00fded1634d27d1127b4be4627079ea"}
+RESULT: Transfer 0 #2091: from=0x0000000000000000000000000000000000000000 to=0xa44a08d3f6933c69212114bb66e2df1813651844 value=100
+RESULT: Transfer 1 #2092: from=0x0000000000000000000000000000000000000000 to=0xa55a151eb00fded1634d27d1127b4be4627079ea value=200
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Complete Setup ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.005212164000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.005212164000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Primary Operator
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Secondary Operator
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000         100.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000         200.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                   300.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Complete Setup - finishMinting()
+1
+> 
+RESULT: PASS Complete Setup - unpause()
+1
+> 
+RESULT: completeSetup_1Tx status=0x1 Success gas=400000 gasUsed=28421 costETH=0.000085263 costUSD=0.07203103503 @ ETH/USD=844.81 gasPrice=3 gwei block=2094 txIx=0 txId=0x7f59a4e4cefb1642fd07f0f268be6dc5d01021bd7a40b6ef546f570b0eed846b @ 1524674658 Wed, 25 Apr 2018 16:44:18 UTC
+undefined
+> 
+RESULT: completeSetup_2Tx status=0x1 Success gas=400000 gasUsed=28620 costETH=0.00008586 costUSD=0.0725353866 @ ETH/USD=844.81 gasPrice=3 gwei block=2094 txIx=1 txId=0x722b7250100cecfafa8fb6d1677b39eeef3a73da7640e20e20093cc99875c2b6 @ 1524674658 Wed, 25 Apr 2018 16:44:18 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=300
+RESULT: token.mintingFinished=true
+RESULT: token.paused=false
+RESULT: Unpause 0 #2094 {}
+RESULT: MintFinished 0 #2094 {}
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Move Tokens ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.005643942000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.005212164000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Primary Operator
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Secondary Operator
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844       -0.000158952000000000          99.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000138006000000000         198.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           1.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec       -0.000134820000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           2.000000000000000000 Account #8
+RESULT:  9 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                   300.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Move Tokens - transfer 1 tokens ac4 -> ac6
+1
+> 
+RESULT: PASS Move Tokens - approve 2 tokens ac5 -> ac7
+1
+> 
+RESULT: PASS Move Tokens - transferFrom 2 tokens ac5 -> ac8 by ac7
+1
+> 
+RESULT: moveTokens1Tx status=0x1 Success gas=100000 gasUsed=52984 costETH=0.000158952 costUSD=0.13428423912 @ ETH/USD=844.81 gasPrice=3 gwei block=2096 txIx=0 txId=0xdcae53d75bb4491de9277ddf5d564a34320e5c074b277b319f167937d7c6d8aa @ 1524674660 Wed, 25 Apr 2018 16:44:20 UTC
+undefined
+> 
+RESULT: moveTokens2Tx status=0x1 Success gas=100000 gasUsed=46002 costETH=0.000138006 costUSD=0.11658884886 @ ETH/USD=844.81 gasPrice=3 gwei block=2096 txIx=1 txId=0x3fa1f2b9a074107f0b0c6322d84525cc182de2264024c161332818a05308c227 @ 1524674660 Wed, 25 Apr 2018 16:44:20 UTC
+undefined
+> 
+RESULT: moveTokens3Tx status=0x1 Success gas=100000 gasUsed=44940 costETH=0.00013482 costUSD=0.1138972842 @ ETH/USD=844.81 gasPrice=3 gwei block=2098 txIx=0 txId=0x5ab2886ac005942463eaebb242100c2f6538adafd0d7655b285e6299a58293d8 @ 1524674662 Wed, 25 Apr 2018 16:44:22 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=300
+RESULT: token.mintingFinished=true
+RESULT: token.paused=false
+RESULT: Approval 0 #2096 owner=0xa55a151eb00fded1634d27d1127b4be4627079ea spender=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec value=2
+RESULT: Transfer 0 #2096: from=0xa44a08d3f6933c69212114bb66e2df1813651844 to=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 value=1
+RESULT: Transfer 1 #2098: from=0xa55a151eb00fded1634d27d1127b4be4627079ea to=0xa88a05d2b88283ce84c8325760b72a64591279a2 value=2
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Move Zero Tokens ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.005982264000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.005212164000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Primary Operator
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Secondary Operator
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844       -0.000271752000000000          99.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000229860000000000         198.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           1.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec       -0.000268488000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           2.000000000000000000 Account #8
+RESULT:  9 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                   300.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Move Zero Tokens - transfer 0 tokens ac4 -> ac6
+1
+> 
+RESULT: PASS Move Zero Tokens - approve 0 tokens ac5 -> ac7
+1
+> 
+RESULT: PASS Move Zero Tokens - transferFrom 0 tokens ac5 -> ac8 by ac7
+1
+> 
+RESULT: moveZeroTokens1Tx status=0x1 Success gas=100000 gasUsed=37600 costETH=0.0001128 costUSD=0.095294568 @ ETH/USD=844.81 gasPrice=3 gwei block=2100 txIx=0 txId=0x56b7c312fc64fc4974f2bd959d9339782dd2d01ead1b4af48d14c89470b75e68 @ 1524674664 Wed, 25 Apr 2018 16:44:24 UTC
+undefined
+> 
+RESULT: moveZeroTokens2Tx status=0x1 Success gas=100000 gasUsed=30618 costETH=0.000091854 costUSD=0.07759917774 @ ETH/USD=844.81 gasPrice=3 gwei block=2100 txIx=1 txId=0x9b543ef1dfc498fcfc0670794fd4e1490734eca463dd3d852ca8e8adbca5990f @ 1524674664 Wed, 25 Apr 2018 16:44:24 UTC
+undefined
+> 
+RESULT: moveZeroTokens3Tx status=0x1 Success gas=100000 gasUsed=44556 costETH=0.000133668 costUSD=0.11292406308 @ ETH/USD=844.81 gasPrice=3 gwei block=2102 txIx=0 txId=0xea680f83f2dbc4e53af5d2338e80df0ee637507838b9f49084bcbea3caa2e9e5 @ 1524674666 Wed, 25 Apr 2018 16:44:26 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=300
+RESULT: token.mintingFinished=true
+RESULT: token.paused=false
+RESULT: Approval 0 #2100 owner=0xa55a151eb00fded1634d27d1127b4be4627079ea spender=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec value=0
+RESULT: Transfer 0 #2100: from=0xa44a08d3f6933c69212114bb66e2df1813651844 to=0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9 value=0
+RESULT: Transfer 1 #2102: from=0xa55a151eb00fded1634d27d1127b4be4627079ea to=0xa88a05d2b88283ce84c8325760b72a64591279a2 value=0
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Move Too Many Tokens ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.006272619000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.005212164000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Primary Operator
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3 - Secondary Operator
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844       -0.000346251000000000          99.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000368058000000000         198.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           1.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec       -0.000346146000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           2.000000000000000000 Account #8
+RESULT:  9 0x022bfb654ced61e65f2869d87b5b3247514c606b        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                   300.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Move Too Many Tokens - transfer 1,000 tokens ac4 -> ac6 - expecting failure
+1
+> 
+RESULT: PASS Move Too Many Tokens - approve 2,000 tokens ac5 -> ac7
+1
+> 
+RESULT: PASS Move Too Many Tokens - transferFrom 2,000 tokens ac5 -> ac8 by ac7 - expecting failure
+1
+> 
+RESULT: moveTooManyTokens1Tx status=0x0 Failure gas=100000 gasUsed=24833 costETH=0.000074499 costUSD=0.06293750019 @ ETH/USD=844.81 gasPrice=3 gwei block=2104 txIx=0 txId=0xf0e4fcfc055d64bc036b44a38d4e052386bfe153bf5a8c8af1937b816bc8c03b @ 1524674668 Wed, 25 Apr 2018 16:44:28 UTC
+undefined
+> 
+RESULT: moveTooManyTokens2Tx status=0x1 Success gas=100000 gasUsed=46066 costETH=0.000138198 costUSD=0.11675105238 @ ETH/USD=844.81 gasPrice=3 gwei block=2104 txIx=1 txId=0xd9f9bc2c409724f13383cad0d92b3d01643c0aefba12bf04543933fd6343abe9 @ 1524674668 Wed, 25 Apr 2018 16:44:28 UTC
+undefined
+> 
+RESULT: moveTooManyTokens3Tx status=0x0 Failure gas=100000 gasUsed=25886 costETH=0.000077658 costUSD=0.06560625498 @ ETH/USD=844.81 gasPrice=3 gwei block=2106 txIx=0 txId=0x0e25e13be349016e5dafdeb71b26a88f603942c39dbdcc540b281c74aeac75c6 @ 1524674670 Wed, 25 Apr 2018 16:44:30 UTC
+undefined
+> 
+RESULT: tokenContractAddress=0x022bfb654ced61e65f2869d87b5b3247514c606b
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=300
+RESULT: token.mintingFinished=true
+RESULT: token.paused=false
+RESULT: Approval 0 #2104 owner=0xa55a151eb00fded1634d27d1127b4be4627079ea spender=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec value=2000
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
